@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Pilowlava";
+  src: url("../fonts/Pilowlava-Regular.woff2") format("woff2"),
+       url("../fonts/Pilowlava-Regular.woff") format("woff"),
+       url("../fonts/Pilowlava-Regular.eot") format("eot");
+}
+
+/* type */
+
+body{
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: Arial, sans-serif; 
+
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	
+	/*letter-spacing: -1px;*/
+	line-height: 1.5;
+	/*text-decoration: line-through;*/
+	/*text-align: right;*/
+}
+
+h1, h2{
+/*	font-family: manicotti, sans-serif;*/
+	font-family: "Pilowlava";
+	font-weight: 400;
+	font-style: normal;
+	font-size: 4rem;
+
+	
+	/*font-family: 'Stick', sans-serif;*/
+}
+
+
+
+/* layout */
+
+section {
+	width: 600px;
+	margin-left: 400px;
+}
+

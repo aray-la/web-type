@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'New York';
+    src: url('../fonts/newyork-webfont.woff2') format('woff2'),
+         url('../fonts/newyork-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*@font-face {
+    font-family: 'New York';
+    src: url('../fonts/newyork-webfont.woff2') format('woff2'),
+         url('../fonts/newyork-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+/* type */
+
+body{
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: 'New York', sans-serif; 
+
+	font-size: 18px;
+
+	/*letter-spacing: -1px;*/
+	line-height: 1.5;
+	/*text-decoration: line-through;*/
+	/*text-align: right;*/
+
+/*	overflow: scroll;*/
+}
+
+/*main{
+	width: 200vw;
+	border: 2px solid red;
+}
+*/
+
+
+
+
+/* layout */
+
+section {
+	width: 600px;
+	margin-left: 400px;
+}
+
+.contrasts {
+	padding: 0;
+}
+.contrasts li{
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid red;
+}
+
+.flex{
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex li{
+	list-style-type: none;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid red;
+}
+
+.center{
+	width: 100vw;
+	height: 100vh;
+	background: yellow;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content{
+	width: 80%;
+}
+
+
+
