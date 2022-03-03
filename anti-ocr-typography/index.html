@@ -8,7 +8,11 @@
 	</head>
 	<body>
 		<header>
-			<h1>Anti-OCR </h1><br><h1> Typography</h1>
+			<h5 class="ocr-title">#@78? </h5><br>
+			<h1>Anti-OCR </h1><br>
+			<h5 class="ocr-title">*%^&7? </h5><br>
+			<h1> Typography</h1>
+
 
 		</header>
 	    
@@ -69,10 +73,96 @@
 
 				<div class="titles">
 	    		<h2>How does OCR work?</h2>
+
+
+			
 	    		</div>
 			
 
+	    		<div class="main-text">
 
+	    				<h3> <span class="highlight"><1></span> Image Pre-Processing</h3>
+
+	    			<p>Before actually doing text recognition, OCR softwares usually perform image pre-processing to “clean up the image” and increase the chances of recognition. Techniques include: </p> 
+
+	    			<div class="lists">
+
+					<p>1. De-skew <br>
+					This process transforms warped, skewed and angled text and text blocks back to its upright position. De-skewing techniques are especially powerful in scene-photo text detections by softwares like Google Lens. </p>
+
+					<p>2. Despeckle<br>
+					Removes positive and negative spots, smoothing edges, clearing up noise. </p>
+
+					<p>3. Binarization<br>
+					Convert an image to black-and-white. Since most documents are black text on white backgrounds, image binarization is an easy way to distinguish text from background. Most PDF readers only recognize text with binary contrast, but more advance OCR softwares like Google Lens detects text by checking multiple color dimensions. </p>
+
+					<p>4. Line removal<br>
+					Cleans up non-glyph boxes and lines.</p>
+
+					<p>5. Layout analysis or “zoning”<br>
+					Identifies columns, paragraphs, captions, etc., as blocks. Particularly useful in multi-column layouts and tables.</p>
+
+					<p>6. Resizing image<br>
+					OCR softwares are trained starting from smaller image sizes, so their recognition accuracies are higher in smaller pixel sizes.   </p>
+
+					<p>7. Edge Detection<br>
+					Complex lighting conditions require more complicated techniques in image pre-processing. Those techniques usually start with edge detections. </p>
+					
+
+					<img src="assets/pre-process.jpg">
+					<h5>Complex Image Pre-Processing Techniques</h5>
+					
+
+
+					</div>
+
+
+					<br><br><br><br>
+					<h3> <span class="highlight"><2></span> Orientation and Script Detection</h3>
+
+
+					<p>Then, after image manipulations are done, OCR softwares perform Orientation and Script Detection (OSD) to identity script, establish word and character shapes baseline, segmentate or divides words when required. </p>
+
+					<h3> <span class="highlight"><3></span> Pattern Recognition</h3>
+
+
+					<p>Pattern recognition is used when the OCR program is fed examples of text in various fonts and formats to compare and recognize characters in the scanned document or image file.</p>
+
+					<p>Early OCR techniques utilize custom designed typefaces such as OCR-A, OCR-B, and MICR-E. These typefaces are specifically designed to boost text recognition accuracy and used on important documents such as passports, IDs, credit cards and cheques. </p>
+
+					<p>Later, researches gathered huge datasets of text recognition data, included print fonts and hand written texts. The MNIST database of is an example.</p>
+
+					<h3> <span class="highlight"><4></span> Feature Detection</h3>
+
+					<p>Feature detection occurs when the OCR applies rules regarding the features of a specific letter or number to recognize characters in the scanned document. Features include the number of angled lines, crossed lines or curves in a character. For example, the capital letter “A” is stored as two diagonal lines that meet with a horizontal line across the middle. When a character is identified, it is converted into an ASCII code (American Standard Code for Information Interchange) that computer systems use to handle further manipulations. </p>
+
+					
+
+
+				</div>
+
+
+				<div class="side">
+
+					<br><br><br><br><br><br><br><br><br><br>
+
+				<img src="assets/deskew.png">
+					<h5>Warp and Skew Correction </h5>
+
+
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+				<img src="assets/deskew-1.png">
+					<h5>Orientation Detection </h5>
+
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<img src="assets/text-binarization.png">
+					<h5>Text Feature Binarization </h5>
+
+
+
+				</div>
 
 		</main>
 
