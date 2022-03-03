@@ -100,6 +100,7 @@ h1 {
 	font-weight: 85W;
 	font-size: 48px;
 	line-height: 1.2;
+	margin-top: -10px;
 	outline: solid;
 	outline-color: #5667FF ;
 	outline-width: 3px;
@@ -172,9 +173,9 @@ img {
     max-height: 460px;
     object-fit: contain;
     outline: solid;
-    outline-offset: -3px;
+    outline-offset: -2px;
 	outline-color: #5667FF;
-	outline-width: 3px;
+	outline-width: 2px;
 }
 
 
