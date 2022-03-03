@@ -20,6 +20,15 @@
     }
     
 
+#ocr{
+	max-width: 200px;
+}
+
+#micr{
+	max-width: 250px;
+}
+
+
 .ocr-title{
 
 	z-index: 0;
