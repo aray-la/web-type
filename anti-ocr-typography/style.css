@@ -40,7 +40,7 @@ p {
 	font-family: 'Breite Grotesk Regular';
 	font-size: 18px;
 	line-height: 1.4;
-	padding-bottom: 10px;
+	padding-bottom: 1rem;
 	letter-spacing: 0.02em;
 	max-width: 40em;
 }
@@ -90,7 +90,9 @@ h3 {
 h5 {
 	display: inline;
 	grid-column: 1;
-	padding: 6px 16px 6px 16px;
+	position: relative;
+	top: -1px;
+	padding: 5px 16px 6px 16px;
 	color: white;
 	font-family: 'Hanyi Qihei X2 75W';
 	font-weight: 75W;
@@ -117,15 +119,6 @@ h4 {
 }
 
 
-
-#ocr{
-	max-width: 250px;
-}
-
-#micr{
-	max-width: 250px;
-}
-
 #live-text{
 	max-height: 60vh;
 
@@ -133,14 +126,15 @@ h4 {
 .ocr-title{
 	z-index: 0;
 	position: relative;
-	top: 4px;
-	left: -30px;
+	top: 3px;
+	left: -20px;
 	padding: 5px 12px 5px 10px;
+	font-size: 12px;
 
 }
 
 .container {
-	width: 90%vw;
+	width: 78vw;
 
 }
 
@@ -153,9 +147,8 @@ h4 {
 	display: grid;
 	grid-template-columns: 60% 30% ;
 	grid-column-gap: 8vw;
-	grid-row-gap: 20px;
-	border: solid;
-	border-color: green;
+	grid-row-gap: 0;
+
 	
 
 }
@@ -163,23 +156,18 @@ h4 {
 
 .content p {	
 	grid-column: 1 ;
-	border: solid;
-	border-color: blue;
+	
 	
 }
 
 .text {
 	grid-column: 1 ;
-	border: solid;
-	border-width: 3px;
-	border-color: yellow;
+
 }
 
 .side{
-
 	grid-column: 2;
-   border: solid;
-	border-color: red;
+  
 	
 
 }
@@ -187,8 +175,7 @@ h4 {
 .side img{
 	margin-top: 1.2rem;
 	grid-column: 2;
-	border: solid;
-	border-color: red;
+	
 
 }
 
@@ -196,6 +183,7 @@ h4 {
 .lists{
 	grid-column: 1;
 	position: relative;
+	top: -1rem;
 	left: 0px;
 	display: inline-block;
 	padding-left: -10em;
@@ -227,6 +215,7 @@ h4 {
 	margin-top: 1rem;
 	margin-bottom: 4rem;
 	max-width: auto;
+
 }
 
 
@@ -242,6 +231,7 @@ h4 {
 	outline-color: #5667FF;
 	outline-width: 2px;
 
+
 }
 
 img{
@@ -250,20 +240,227 @@ img{
 
 
 
+@media screen and (max-width: 900px){
 
-@media screen and (max-width: 600px){
-	
-	.content {
-		grid-template-columns: 1fr;
-		width: 90%vw;
+	p {
+		color: black;
+		font-family: 'Breite Grotesk Regular';
+		font-size: 16.8px;
+		line-height: 1.4;
+		
+		letter-spacing: 0.02em;
+		max-width: 40em;
 	}
+
+	h1 {
+		display: inline;
+		color:  black;
+		font-family: 'Hanyi Qihei X2';
+		font-weight: 85W;
+		font-size: 38px;
+		line-height: 1.2;
+		margin-top: -10px;
+		outline: solid;
+		outline-color: #5667FF ;
+		outline-width: 2px;
+
+	}
+
+
+	h2 {
+		color: black;
+		font-family: 'Hanyi Qihei X2';
+		font-size: 24px;
+		font-weight: 85W;
+		line-height: 1.2;
+		text-decoration: underline;
+		text-decoration-color: #5667FF ;
+		text-underline-position: under;
+	}
+
+	h3 {
+
+		color: black;
+		grid-column: 1;
+		font-family: 'Hanyi Qihei X2';
+		font-size: 18px;
+		font-weight: 85W;
+		line-height: 1.2;
+
+	}
+
+	.highlight{
+		color:  white;
+		background-color: #5667FF;
+
+	}
+
+	h5 {
+		display: inline;
+		grid-column: 1;
+		position: relative;
+		top: -4px;
+		padding: 2px 12px 4px 12px;
+		color: white;
+		font-family: 'Hanyi Qihei X2 75W';
+		font-weight: 75W;
+		font-size: 12px;
+		letter-spacing: 0em;
+		line-height: 1.2;
+		background-color: #5667FF;
+		
+	}
+
+	h4 {
+		display: inline;
+		padding: 7px 18px 8px 16px;
+		color: black;
+		font-family: 'Hanyi Qihei X2 75W';
+		font-weight: 75W;
+		font-size: 16px;
+		letter-spacing: 0em;
+		line-height: 1.2;
+		outline: solid;
+		outline-color: #5667FF ;
+		outline-width: 3px;
+		
+	}
+
 
 
 	body {
 		background-color: #F1F1F1;
-		padding: 20px 100px 50px 100px;
+		padding: 2.6rem;
 
 	}
+
+	header{
+		padding: 1rem 0px 4rem 0px;
+
+	}
+
+	.container {
+		width: 100%;
+	
+
+   }
+
+   .section{
+	width: 100%;
+
+	}
+
+	
+	.content {
+		grid-template-columns: 60% 30%;
+		grid-column-gap: 6vw;
+		grid-row-gap: 1rem;
+
+	}
+
+	content p {	
+		grid-column: 1 ;
+		
+		
+	}
+
+	.text {
+		grid-column: 1 ;
+		
+	}
+
+	.side{
+		grid-column: 2;
+	   
+	
+	}
+
+	.side img{
+		margin-top: 1.2rem;
+		grid-column: 2;
+		
+	}
+
+
+	.lists{
+		grid-column: 1;
+		position: relative;
+		left: 0px;
+		display: inline-block;
+		padding-left: -10em;
+	}
+
+
+
+}
+
+@media screen and (max-width: 640px){
+
+
+
+	body {
+		background-color: #F1F1F1;
+		padding: 2rem;
+
+	}
+
+	header{
+		padding: 1rem 0px 4rem 0px;
+
+	}
+
+	.container {
+		width: 100%;
+	
+
+   }
+
+   .section{
+	width: 100%;
+
+	}
+
+	
+	.content {
+		grid-template-columns: 1fr;
+		
+		grid-row-gap: 1rem;
+	}
+
+	content p {	
+		grid-column: 1 ;
+		
+		
+	}
+
+	.text {
+		grid-column: 1 ;
+		
+	}
+
+	.side{
+
+		grid-column: 1;
+	  
+		
+
+	}
+
+	.side img{
+		margin-top: 1.2rem;
+		grid-column: 1;
+
+	}
+
+
+	.lists{
+		grid-column: 1;
+		position: relative;
+		left: 0px;
+		display: inline-block;
+		padding-left: -10em;
+	}
+
 
 
 }
