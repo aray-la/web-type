@@ -18,10 +18,12 @@
     font-weight: 75W;
     src: local('Hanyi Qihei X2'), url('assets/HYQiHeiX2-75W.woff') format('woff');
     }
+    
+
+
 
 body {
 	background-color: #F1F1F1;
-
 	padding: 20px 100px 0px 100px;
 
 
@@ -31,7 +33,7 @@ header{
 
 	padding: 40px 0px 50px 0px;
 	margin: auto;
-	width: 75vw;
+	width: 70vw;
 	align-items: center;
 
 
@@ -39,8 +41,7 @@ header{
 
 p {
 	color: black;
-	font-family: 'Inter', sans-serif;
-	font-weight: 500;
+	font-family: 'Hanyi Qihei X2 75W';
 	font-size: 16px;
 	line-height: 1.4;
 	padding-bottom: 1rem;
@@ -142,8 +143,8 @@ h4 {
 
 .container {
 	margin: auto;
-	width: 75vw;
-
+	width: 70vw;
+	align-items: center;
 
 }
 
@@ -156,10 +157,9 @@ h4 {
 
 .content{
 	display: grid;
-	grid-template-columns: 50% 50% ;
-	grid-column-gap: 6vw;
+	grid-template-columns: 50% 40% ;
+	grid-column-gap: 8vw;
 	grid-row-gap: 0;
-	margin: auto;
 
 	
 
@@ -188,7 +188,6 @@ h4 {
 	margin-top: 1.2rem;
 	grid-column: 2;
 	
-	
 
 }
 
@@ -213,14 +212,13 @@ h4 {
 	display: block;
 	grid-column: 1 / 2;
 	margin-bottom: 4px;
-   max-width: 75vw;
+   max-width: 65vw;
    max-height: auto;
    object-fit: scale-down;
-   /*
    outline: solid;
    outline-offset: -2px;
 	outline-color: black;
-	outline-width: 2px;   */
+	outline-width: 2px;   
 }
 
 .main-img{
@@ -240,11 +238,10 @@ h4 {
    max-width: 100%;
    max-height: 100%;
    object-fit: scale-down;
-     /*
    outline: solid;
    outline-offset: -2px;
 	outline-color: #5667FF;
-	outline-width: 2px; */
+	outline-width: 2px;
 
 
 }
@@ -259,8 +256,7 @@ img{
 
 	p {
 		color: black;
-		font-family: 'Inter', sans-serif;
-		font-weight: 500;
+		font-family: 'Breite Grotesk Regular';
 		font-size: 16.8px;
 		line-height: 1.4;
 		
@@ -352,10 +348,6 @@ img{
 
 	header{
 		padding: 1rem 0px 4rem 0px;
-		margin: auto;
-		width: 87vw;
-		align-items: center;
-
 
 	}
 
@@ -372,7 +364,7 @@ img{
 
 	
 	.content {
-		grid-template-columns: 50% 45%;
+		grid-template-columns: 60% 30%;
 		grid-column-gap: 6vw;
 		grid-row-gap: 1rem;
 
