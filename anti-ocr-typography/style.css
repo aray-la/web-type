@@ -51,7 +51,7 @@ p {
 h1 {
 	display: inline;
 	color:  black;
-	font-family: 'Hanyi Qihei X2';
+	font-family: 'Hanyi Qihei X2', sans-serif;
 	font-weight: 85W;
 	font-size: 38px;
 	line-height: 1.2;
@@ -65,7 +65,7 @@ h1 {
 
 h2 {
 	color: black;
-	font-family: 'Hanyi Qihei X2';
+	font-family: 'Hanyi Qihei X2', sans-serif;
 	font-size: 24px;
 	font-weight: 85W;
 	line-height: 1.2;
@@ -78,7 +78,7 @@ h3 {
 
 	color: black;
 	grid-column: 1;
-	font-family: 'Hanyi Qihei X2';
+	font-family: 'Hanyi Qihei X2', sans-serif;
 	font-size: 18px;
 	font-weight: 85W;
 	line-height: 1.2;
@@ -98,7 +98,7 @@ h5 {
 	top: -1px;
 	padding: 5px 16px 6px 16px;
 	color: white;
-	font-family: 'Hanyi Qihei X2 75W';
+	font-family: 'Hanyi Qihei X2 75W', sans-serif;
 	font-weight: 75W;
 	font-size: 13px;
 	letter-spacing: 0em;
@@ -112,7 +112,7 @@ h4 {
 	display: inline;
 	padding: 7px 18px 8px 16px;
 	color: black;
-	font-family: 'Hanyi Qihei X2 75W';
+	font-family: 'Hanyi Qihei X2 75W', sans-serif; 
 	font-weight: 75W;
 	font-size: 16px;
 	letter-spacing: 0em;
@@ -177,6 +177,16 @@ h4 {
 
 }
 
+.text-main {
+	grid-column: 1 / 2;
+}
+
+.text-main p {
+	grid-column: 1 / 2;
+}
+
+
+
 .side{
 	grid-column: 2;
   
@@ -214,7 +224,7 @@ h4 {
 	grid-column: 1 / 2;
 	margin-bottom: 4px;
    max-width: 75vw;
-   max-height: auto;
+   max-height: 400px;
    object-fit: scale-down;
    /*
    outline: solid;
@@ -263,7 +273,7 @@ img{
 		font-weight: 500;
 		font-size: 16.8px;
 		line-height: 1.4;
-		
+	
 		letter-spacing: 0.02em;
 		max-width: 40em;
 	}
