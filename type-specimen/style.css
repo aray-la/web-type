@@ -1,0 +1,80 @@
+@font-face {
+   font-family: 'LeetVariable';
+   src: url('LeetVariable2.ttf') format("truetype-variations");
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: sans-serif;
+   background-color: black;
+}
+main{
+   font-family: 'LeetVariable';
+	text-align: center;
+   color: white;
+   min-height: 80vh;
+   padding-top: 5rem;
+   letter-spacing: 0.2rem;
+}
+
+#face{
+   --leet-axis: 0;
+	font-size: 20vh;
+   line-height: 0.8;
+   transition: color 300ms linear;
+   font-variation-settings: 'leet' var(--leet-axis);
+  
+}
+
+.animated{
+   animation: 4s linear infinite alternate facemover;
+}
+
+nav{
+   position: fixed;
+   width: 100vw;
+   bottom: 0;
+   padding: 3em 0;
+   text-align: center;
+}
+
+
+button{
+   background: none;
+   border: 1px solid white;
+   padding: 5px 20px;
+}
+
+button{
+   font-size: 18px;
+   color: white;
+
+}
+
+label{
+   font-size: 18px;
+   color: white;
+   padding: 1.2rem;
+   
+}
+
+
+.field{
+   display: inline-block;
+   margin-right: 2em;
+}
+
+@keyframes facemover{
+   0% {
+      font-variation-settings: 'leet' 0;
+   }
+
+
+   100% {
+      font-variation-settings: 'leet' 100;
+   }
+}
