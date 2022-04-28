@@ -126,6 +126,7 @@ p{
 
     font-family: 'LeetVariable';
     --leet-axis: 0;
+  
     font-variation-settings: 'leet' var(--leet-axis);
 }
 
@@ -137,7 +138,7 @@ p{
     font-variation-settings: 'leet' var(--leet-axis);
 }
 
-.ocr-b-0{
+.ocr-b-2{
 
  
     font-family: 'LeetVariable';
