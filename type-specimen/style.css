@@ -1,6 +1,11 @@
 @font-face {
    font-family: 'LeetVariable';
-   src: url('Leet-LeetVariable.ttf') format("truetype-variations");
+   src: url('OCl2-l3-Variable.ttf') format("truetype-variations");
+}
+
+@font-face {
+   font-family: 'OCR-B';
+   src: url('OCR-B.ttf') format("truetype-variations");
 }
 
 *{
@@ -8,39 +13,226 @@
    padding: 0;
    box-sizing: border-box;
 }
+
 body{
    font-family: sans-serif;
    background-color: black;
 }
+
 main{
-   font-family: 'LeetVariable';
+  
 	text-align: center;
    color: white;
    min-height: 80vh;
-   padding-top: 5rem;
-   letter-spacing: 0.2rem;
+   padding: 3rem 3rem 3rem 3rem;
+   
+}
+
+p{   
+   font-size: 14px;
+   font-family: 'OCR-B';
+}
+
+#title{
+   font-family: 'LeetVariable';
+   --leet-axis: 0;
+   font-size: 4rem;
+   line-height: 1.4;
+   font-variation-settings: 'leet' var(--leet-axis);
+   padding: 6rem 2rem 4rem 2rem;
+   text-align: center;
+}
+
+#explain{
+   margin: auto;
+   font-family: 'LeetVariable';
+   --leet-axis: 0;
+   font-size: 16px;
+   line-height: 2.2;
+   font-variation-settings: 'leet' var(--leet-axis);
+   padding: 2rem 6em 6rem 6em;
+   text-align: left;
+ 
+   max-width: 66rem;
+}
+
+#explain2{
+   margin: auto;
+   font-family: 'LeetVariable';
+   --leet-axis: 0;
+   font-size: 1rem;
+   line-height: 2;
+   font-variation-settings: 'leet' var(--leet-axis);
+   padding: 2rem 0em 4rem 0em;
+   text-align: center;
+   
 }
 
 #face{
+   font-family: 'LeetVariable';
    --leet-axis: 0;
-	font-size: 20vh;
-   line-height: 0.8;
-   transition: color 300ms linear;
+	font-size: 40px;
+   line-height: 1.4;
+  
    font-variation-settings: 'leet' var(--leet-axis);
+    padding: 0.8rem;
+}
+
+
+.instances{
+   margin: auto;
+   margin-top: 2rem;
+   margin-bottom: 4rem;
+   display: grid;
+   font-size: 20px;
+   line-height: 2;
+   padding: 6rem 2em 6rem 2em;
+   grid-template-columns: 1fr 1fr;
+   grid-auto-rows: 1fr 1fr;
+   text-align: center;
+   grid-row-gap: 4rem;
+   grid-column-gap: 2rem;
+   max-width: 60rem;
+   outline: solid;
+   outline-color: white;
+}
+
+.g1{
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+}
+.g2{
+    grid-column: 2 / 2;
+   grid-row: 1 / 2;
+}
+.g3{
+   font-family: 'LeetVariable';
+    grid-column: 1 / 2;
+   grid-row: 2 / 2;
+}
+.g4{
+    grid-column: 2 / 2;
+   grid-row: 2 / 2;
+}
+
+
+.ocr-b-p{
+   font-family: 'OCR-B';
+   
+}
+
+.ocr-b-0{
+  
+
+    font-family: 'LeetVariable';
+    --leet-axis: 0;
+    font-variation-settings: 'leet' var(--leet-axis);
+}
+
+.ocr-b-1{
+ 
+  
+    font-family: 'LeetVariable';
+    --leet-axis: 100;
+    font-variation-settings: 'leet' var(--leet-axis);
+}
+
+.ocr-b-0{
+
+ 
+    font-family: 'LeetVariable';
+    --leet-axis: 200;
+    font-variation-settings: 'leet' var(--leet-axis);
+}
+
+
+.OCR-B{
+   font-size: 2.5rem;
+   font-family: 'OCR-B';
+
+}
+
+.OCl2-l3-0{
+   font-size: 2.5rem;
+   font-family: 'LeetVariable';
+    --leet-axis: 0;
+    font-variation-settings: 'leet' var(--leet-axis);
+    padding-top: 10px;
+}
+
+.OCl2-l3-1{
+    font-size: 2.5rem;
+   font-family: 'LeetVariable';
+    --leet-axis: 100;
+    font-variation-settings: 'leet' var(--leet-axis);
+    padding-top: 10px;
+}
+
+.OCl2-l3-2{
+    font-size: 2.5rem;
+   font-family: 'LeetVariable';
+    --leet-axis: 200;
+    font-variation-settings: 'leet' var(--leet-axis);
+    padding-top: 10px;
+}
+
+
+#window1{
+   margin: auto;
+   font-family: 'LeetVariable';
+   --leet-axis: 0;
+   font-size: 4.7rem;
+   line-height: 1.6;
+   font-variation-settings: 'leet' var(--leet-axis);
+    padding: 4rem 6rem 0rem 6rem;
+   text-align: center;
+   min-height: 80vh;
+   max-width: 66rem;
+   letter-spacing: -1rem;
+}
+
+#window2{
+   margin: auto;
+   font-family: 'LeetVariable';
+   --leet-axis: 0;
+   font-size: 4.7rem;
+   line-height: 1.6;
+   font-variation-settings: 'leet' var(--leet-axis);
+    padding: 4rem 6rem 0rem 6rem;
+   text-align: center;
+   min-height: 65vh;
+   max-width: 66rem;
+   letter-spacing: -1rem;
+}
+
+#window3{
+   margin: auto;
+   font-family: 'LeetVariable';
+   --leet-axis: 0;
+   font-size: 3rem;
+   line-height: 2;
+   font-variation-settings: 'leet' var(--leet-axis);
+    padding: 4rem 6rem 2rem 6rem;
+   text-align: center;
+   min-height: 50vh;
+   max-width: 100rem;
   
 }
 
-.animated{
-   animation: 4s linear infinite alternate facemover;
+#window4{
+   margin: auto;
+   font-family: 'LeetVariable';
+   --leet-axis: 0;
+   font-size: 3rem;
+   line-height: 2;
+   font-variation-settings: 'leet' var(--leet-axis);
+    padding: 4rem 6rem 2rem 6rem;
+   text-align: center;
+    min-height: 50vh;
+   max-width: 100rem;
+  
 }
 
-nav{
-   position: fixed;
-   width: 100vw;
-   bottom: 0;
-   padding: 3em 0;
-   text-align: center;
-}
 
 
 button{
@@ -65,7 +257,7 @@ label{
 
 .field{
    display: inline-block;
-   margin-right: 2em;
+   margin: 2em;
 }
 
 @keyframes facemover{
@@ -75,6 +267,6 @@ label{
 
 
    100% {
-      font-variation-settings: 'leet' 100;
+      font-variation-settings: 'leet' 200;
    }
 }

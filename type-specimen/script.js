@@ -1,21 +1,52 @@
 $(document).ready(function(){
 
 
-	$('input[type=range]').on('input', function(){
-		 inputType = $(this).attr('id');
-		 inputValue = $(this).val();
 
-		 if (inputType == 'leet'){
-		 	$('#face').css('--leet-axis', inputValue);
-		 }else{
-		 	$('#face').css('--mouth-axis', inputValue);
-		 }
+
+
+	const leetmax= 200;
+
+	$('main').mousemove(function(event){
+		
+		let cursorX = event.pageX / $(this).width();
+
+		let settingX= Math.floor(cursorX * leetmax);
+	
+
+	
+		$('#title').css({"--leet-axis":settingX
+		
+		});
+	
+
+		$('#explain').css({"--leet-axis":settingX
+		
+		});
+
+
+		$('#window1').css({"--leet-axis":settingX
+		
+		});
+
+		$('#window2').css({"--leet-axis":settingX
+		
+		});
+
+		$('#window3').css({"--leet-axis":settingX
+		
+		});
+
+		$('#window4').css({"--leet-axis":settingX
+		
+		});
+
+
+
+
 
 	});
+	
 
-	$('#play').click(function(){
-		$('#face').toggleClass('animated');
-	});
 
 });
 	
