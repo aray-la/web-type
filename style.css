@@ -5,14 +5,20 @@
 
 main {
 	padding: 2em;
+	padding-top: 1em;
 	color: blue;
 	font-family: Rubik;
 	font-weight: 500;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 
 }
+
 h1 {
 	font-family: Rubik;
 	color: red;
+	line-height: 1;
+
 }
 a{
 	color: magenta;
@@ -21,4 +27,11 @@ a{
 ol{
 	line-height: 1.5;
 	font-size: 20px;
+
+}
+#exercises{
+	grid-column: 1;
+}
+#projects{
+	grid-column: 2;
 }
